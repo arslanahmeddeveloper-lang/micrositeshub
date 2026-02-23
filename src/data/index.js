@@ -1,11 +1,11 @@
 export const navigation = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Blog', href: '#blog' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Pricing', href: '/#pricing' },
+    { name: 'Portfolio', href: '/#portfolio' },
+    { name: 'Blog', href: '/#blog' },
+    { name: 'Contact', href: '/#contact' },
 ];
 
 export const logos = [
