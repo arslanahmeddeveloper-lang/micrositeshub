@@ -38,8 +38,19 @@ export default {
                 '2xl': '1rem',
                 '3xl': '1.5rem',
                 'full': '9999px',
+            },
+            keyframes: {
+                marquee: {
+                    '0%': { transform: 'translateX(0)' },
+                    '100%': { transform: 'translateX(-33.333333%)' }
+                }
+            },
+            animation: {
+                marquee: 'marquee 20s linear infinite'
             }
         },
     },
-    plugins: [],
+    plugins: [
+        require('tailwind-scrollbar-hide')
+    ],
 }
