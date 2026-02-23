@@ -37,11 +37,11 @@ export default function AboutVision() {
                     </p>
 
                     <div className="space-y-6">
-                        {/* Custom Blue Button Check */}
-                        <div className="flex items-start gap-4">
-                            <div className="w-12 h-12 rounded-lg bg-primary text-white flex items-center justify-center flex-shrink-0 shadow-md">
-                                <span className="font-bold text-sm tracking-wide">Better Results 10x</span>
-                            </div>
+                        {/* Call to Action Button */}
+                        <div className="flex items-start mb-6">
+                            <button className="btn-primary">
+                                Get in Touch
+                            </button>
                         </div>
 
                         {/* List Items */}

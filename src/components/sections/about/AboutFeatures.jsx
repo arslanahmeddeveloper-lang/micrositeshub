@@ -53,13 +53,13 @@ export default function AboutFeatures() {
                     {features.map((feature) => (
                         <div key={feature.id} className="relative z-10 flex gap-6 sm:gap-8 items-start">
                             {/* Number Badge */}
-                            <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center font-bold text-sm shadow-md mt-1">
-                                {feature.id}
+                            <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary flex items-center justify-center shadow-md mt-1">
+                                <h3 className="!text-white text-base md:text-base lg:text-base m-0 leading-none">{feature.id}</h3>
                             </div>
 
                             {/* Text Content */}
                             <div>
-                                <h3 className="text-xl font-bold text-dark mb-2 tracking-tight">
+                                <h3 className="mb-2 tracking-tight">
                                     {feature.title}
                                 </h3>
                                 <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
