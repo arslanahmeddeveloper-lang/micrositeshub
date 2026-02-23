@@ -24,7 +24,7 @@ const reasons = [
     },
     {
         id: 3,
-        title: 'National Support',
+        title: 'Dedicated Support',
         text: 'Get access to expert strategy and round the clock responsive staff.',
         icon: (
             <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -34,7 +34,7 @@ const reasons = [
     },
     {
         id: 4,
-        title: '24/7 Hours',
+        title: 'SEO-Ready',
         text: 'Tailored solutions designed out of hours for minimal site disruptions.',
         icon: (
             <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -56,7 +56,7 @@ export default function AboutWhyChooseUs() {
                     viewport={{ once: true }}
                     className="max-w-[800px] mx-auto mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl lg:text-[42px] font-bold text-dark mb-6 tracking-tight">
+                    <h2 className="mb-6 tracking-tight">
                         <span className="text-primary">Why</span> We're the Right Choice
                     </h2>
                     <p className="text-gray-500 text-[15px] md:text-base leading-relaxed">
@@ -81,9 +81,9 @@ export default function AboutWhyChooseUs() {
                                 </div>
                             </div>
 
-                            <h4 className="text-[17px] font-bold text-dark mb-3 group-hover:text-primary transition-colors">
+                            <h3 className="mb-3 group-hover:text-primary transition-colors">
                                 {item.title}
-                            </h4>
+                            </h3>
                             <p className="text-gray-500 text-sm leading-relaxed max-w-[220px] mx-auto">
                                 {item.text}
                             </p>
