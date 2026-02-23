@@ -22,18 +22,15 @@
   }
 
   h1 {
-    font-size: 72px !important;
-    line-height: 72px !important;
+    @apply text-5xl md:text-6xl lg:text-7xl leading-tight md:leading-snug lg:leading-[72px];
   }
 
   h2 {
-    font-size: 48px !important;
-    line-height: 58px !important;
+    @apply text-4xl md:text-5xl lg:text-[48px] leading-tight md:leading-snug lg:leading-[58px];
   }
 
   h3 {
-    font-size: 30px !important;
-    line-height: 38px !important;
+    @apply text-2xl md:text-3xl lg:text-[30px] leading-snug md:leading-normal lg:leading-[38px];
   }
 
   h1,

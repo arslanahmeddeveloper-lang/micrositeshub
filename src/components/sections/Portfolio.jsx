@@ -23,8 +23,8 @@ export default function Portfolio() {
     };
 
     return (
-        <section id="portfolio" className="section-padding bg-white">
-            <div className="max-w-7xl mx-auto">
+        <section id="portfolio" className="section-padding bg-white px-6 md:px-10 lg:px-16 overflow-hidden">
+            <div className="max-w-[1440px] mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -39,12 +39,12 @@ export default function Portfolio() {
 
                     {/* Tabs Filter */}
                     <div className="flex justify-center mb-12">
-                        <div className="inline-flex flex-wrap items-center justify-center p-1.5 bg-gray-100 rounded-full">
+                        <div className="inline-flex flex-wrap items-center justify-center gap-y-2 p-1.5 bg-gray-100 rounded-3xl sm:rounded-full">
                             {categories.map((category) => (
                                 <button
                                     key={category}
                                     onClick={() => setActiveTab(category)}
-                                    className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center justify-center gap-2 ${activeTab === category
+                                    className={`px-4 sm:px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center justify-center gap-2 ${activeTab === category
                                         ? 'bg-dark text-white shadow-md'
                                         : 'text-gray-500 hover:text-dark hover:bg-white/50'
                                         }`}
@@ -58,7 +58,7 @@ export default function Portfolio() {
                 </motion.div>
 
                 {/* Grid */}
-                <motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
                     <AnimatePresence>
                         {filteredItems.map((item) => (
                             <motion.div
@@ -68,7 +68,7 @@ export default function Portfolio() {
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0, scale: 0.9 }}
                                 transition={{ duration: 0.4, ease: "easeOut" }}
-                                className="group relative overflow-hidden rounded-xl aspect-[4/3] bg-gray-100 cursor-pointer shadow-md"
+                                className="group relative overflow-hidden rounded-2xl aspect-square sm:aspect-[4/3] bg-gray-100 cursor-pointer shadow-md"
                             >
                                 <img
                                     src={item.image}
@@ -78,10 +78,10 @@ export default function Portfolio() {
                                 />
 
                                 {/* Overlay Hover Effect */}
-                                <div className="absolute inset-0 bg-dark/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                                <div className="absolute inset-0 bg-dark/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 sm:p-8">
                                     <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                                        <h4 className="text-2xl font-semibold text-white mb-2">{item.title}</h4>
-                                        <span className="text-gray-300 font-medium text-sm flex items-center gap-2">
+                                        <h4 className="text-xl sm:text-2xl font-semibold text-white mb-2">{item.title}</h4>
+                                        <span className="text-gray-300 font-medium text-xs sm:text-sm flex items-center gap-2">
                                             {getCategoryIcon(item.category)}
                                             {item.category}
                                         </span>

@@ -26,8 +26,8 @@ export default function Solutions() {
     };
 
     return (
-        <section id="services" className="bg-bgsoft py-20">
-            <div className="w-[1340px] max-w-full mx-auto">
+        <section id="services" className="bg-bgsoft py-20 px-6 md:px-10 lg:px-16 overflow-hidden">
+            <div className="w-full max-w-[1340px] mx-auto">
                 <div className="text-left mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold text-dark">
                         Our <span className="text-primary">Solutions</span>
@@ -49,7 +49,7 @@ export default function Solutions() {
                             <motion.div
                                 key={solution.id}
                                 variants={itemVariants}
-                                className={`group relative bg-[#0B1120] border border-gray-800 rounded-3xl p-8 flex flex-col sm:flex-row items-start gap-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/20 ${isLastCentered ? 'w-full lg:w-[calc(50%-0.75rem)]' : 'w-full lg:w-[calc(50%-0.75rem)]'}`}
+                                className={`group relative bg-[#0B1120] border border-gray-800 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-start gap-5 sm:gap-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/20 ${isLastCentered ? 'w-full lg:w-[calc(50%-0.75rem)]' : 'w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(50%-0.75rem)]'}`}
                             >
                                 {/* Bottom right arrow */}
                                 <div className="absolute bottom-6 right-6">

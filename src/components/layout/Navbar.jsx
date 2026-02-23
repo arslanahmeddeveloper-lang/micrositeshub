@@ -17,7 +17,7 @@ export default function Navbar() {
 
     return (
         <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-sm py-2' : 'bg-white py-4'}`}>
-            <nav className="flex items-center justify-between px-6 lg:px-16" aria-label="Global">
+            <nav className="flex items-center justify-between px-6 md:px-10 lg:px-16 mx-auto max-w-[1440px]" aria-label="Global">
                 {/* Logo */}
                 <div className="flex w-full lg:w-1/4">
                     <a href="#" className="-m-1.5 p-1.5 flex items-center gap-2">
