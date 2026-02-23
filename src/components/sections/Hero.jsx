@@ -99,7 +99,7 @@ export default function Hero() {
                         >
                             <span className="text-white font-medium text-xs sm:text-sm whitespace-nowrap">WordPress</span>
                             {/* Pointing Right-Down from bottom right corner */}
-                            <div className="absolute -bottom-5 -right-5 pointer-events-none hidden sm:block">
+                            <div className="absolute -bottom-5 -right-5 pointer-events-none">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="rotate-[90deg] text-secondary">
                                     <path d="M20.738 2.05L1.8 8.058a1.2 1.2 0 00-.024 2.277l8.653 4.197 4.197 8.653a1.2 1.2 0 002.277-.024l6.008-18.938A1.2 1.2 0 0020.738 2.05z" fill="currentColor" stroke="white" strokeWidth="1" strokeLinejoin="round" />
                                 </svg>
@@ -113,7 +113,7 @@ export default function Hero() {
                             className="absolute -right-4 sm:-right-8 bottom-[25%] sm:bottom-[35%] z-30 bg-primary px-4 sm:px-5 py-2 rounded-lg shadow-lg flex items-center justify-center gap-2"
                         >
                             {/* Pointing Left-Up from top left edge */}
-                            <div className="absolute -top-6 -left-6 pointer-events-none hidden sm:block">
+                            <div className="absolute -top-6 -left-6 pointer-events-none">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="-rotate-[90deg] text-secondary">
                                     <path d="M20.738 2.05L1.8 8.058a1.2 1.2 0 00-.024 2.277l8.653 4.197 4.197 8.653a1.2 1.2 0 002.277-.024l6.008-18.938A1.2 1.2 0 0020.738 2.05z" fill="currentColor" stroke="white" strokeWidth="1" strokeLinejoin="round" />
                                 </svg>
@@ -133,7 +133,7 @@ export default function Hero() {
                         >
                             <span className="text-white font-medium text-xs sm:text-sm whitespace-nowrap">Web Development</span>
                             {/* Dark Gray Pointing Top-Right from top right edge */}
-                            <div className="absolute -top-6 -right-5 pointer-events-none hidden sm:block">
+                            <div className="absolute -top-6 -right-5 pointer-events-none">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="rotate-[0deg]">
                                     <path d="M20.738 2.05L1.8 8.058a1.2 1.2 0 00-.024 2.277l8.653 4.197 4.197 8.653a1.2 1.2 0 002.277-.024l6.008-18.938A1.2 1.2 0 0020.738 2.05z" fill="rgb(26 26 46 / var(--tw-bg-opacity, 1))" stroke="white" strokeWidth="1" strokeLinejoin="round" />
                                 </svg>
